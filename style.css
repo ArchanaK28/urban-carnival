@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(images/background.png) no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding:  0 8%;
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform:translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content button{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.content button:hover {
+    transform: scale(1.1);      /* Scale the button up by 10% */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);      /* Add a shadow effect */
+  }
+.time{
+    display: flex;  /*Display one after one horizonatally*/
+    }
+.time div{
+    flex-basis: 100px;
+}    
+.time div p{
+    font-size: 60px;
+    margin-bottom: -5px; 
+    
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
